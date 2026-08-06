@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Friendly Roast – Funny AI Roasts & Jokes</title>
+<meta name="description" content="Friendly Roast is a fun website with family-friendly random roasts.">
+<meta name="keywords" content="friendly roast, roast generator, funny jokes">
+<meta property="og:title" content="Friendly Roast">
+<meta property="og:description" content="Get funny friendly roasts instantly!">
+<style>
+body{font-family:Arial,sans-serif;background:#111;color:#fff;display:flex;justify-content:center;align-items:center;min-height:100vh;margin:0}
+.card{max-width:700px;padding:24px;background:#1e1e1e;border-radius:16px;text-align:center}
+button{padding:10px 16px;margin:6px;border:none;border-radius:8px;cursor:pointer}
+#roast{font-size:1.2em;margin:20px 0}
+</style></head><body><div class="card">
+<h1>Friendly Roast</h1>
+<p>Funny, family-friendly roasts.</p>
+<div id="roast">Press the button!</div>
+<button onclick="randomRoast()">Random Roast</button>
+<button onclick="copyRoast()">Copy</button>
+<script>
+const roasts=[
+"You're proof that Wi-Fi has stronger connections than some friendships.",
+"You bring excitement... whenever you leave the room.",
+"If overthinking burned calories, you'd be a champion.",
+"Your jokes load slower than 2G internet.",
+"You’re like a software update: everyone delays you.",
+"Even autocorrect gave up on that message.",
+"You're not late; you're on your own timezone.",
+"Your confidence deserves an award."
+];
+function randomRoast(){roast.textContent=roasts[Math.floor(Math.random()*roasts.length)]}
+function copyRoast(){navigator.clipboard.writeText(roast.textContent);alert("Copied!")}
+</script>
+<footer><hr><p>© 2026 Friendly Roast</p></footer>
+</div></body></html>
